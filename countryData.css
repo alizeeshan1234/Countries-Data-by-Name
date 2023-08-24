@@ -1,0 +1,131 @@
+#search--bar {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+#searchBar {
+    width: 300px;
+    height: 30px;
+    border: 0px solid transparent;
+    outline: none;
+    position: relative;
+}
+
+#searchBar::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 10px;
+}
+
+#searchBar:hover {
+    border-bottom: 1px solid black;
+    animation: liner 0.5s forwards;
+}
+
+#searchBar:active {
+    border-bottom: 1px solid black;
+}
+
+button {
+    position: relative; /* Button is fixed regardless of scrolling */
+    top: 10%; /* Adjust the top and left values to position the button where you want */
+    left: 0%;
+    height: 30px;
+    width: 80px;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    background-color: lightgreen;
+    transition: 1s ease;
+}
+button:hover{
+    cursor: pointer;
+    height: 35px;
+    width: 85px;
+    transition: 1s ease;
+    box-shadow: 6px 6px  rgb(83, 83, 83);
+}
+button:active{
+    animation-name: button-active;
+    animation-duration: 2s;
+    transition: 2s ease;
+}
+
+@keyframes button-active{
+    from{
+        box-shadow: 6px 6px  rgb(83, 83, 83);
+        transition: 2s ease;
+    }
+    to{
+        box-shadow: none;
+        transition: 2s ease;
+    }
+}
+
+#container{
+    position: relative;
+    left: -10%;
+    padding: 20px;
+}
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+#CountryBox{
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgb(127, 127, 127);
+}
+#CountryDetails{
+    padding: 10px;
+}
+
+img{
+    width: 400px;
+    border: 0px solid transparent;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.CountryText{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+h6{
+    font-size: 30px;
+    position: relative;
+    left: -20%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+#spanData{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: 0px solid transparent;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#neighbourCountryBox{
+    height: 600px;
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgb(127, 127, 127);
+}
+
+#neighbourCountryDetails{
+    padding: 10px;
+}
+
+#neighbour{
+    position: relative;
+    left: 1050px;
+    top: 100px;
+}
